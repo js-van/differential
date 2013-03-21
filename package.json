@@ -1,0 +1,44 @@
+{
+  "name": "differential",
+  "version": "0.0.0",
+  "description": "Homological exterior derivartive with integer coefficients",
+  "main": "differential.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "boundary-cells": "~0.0.0",
+    "cooriented": "~0.0.0",
+    "csr-matrix": "~0.1.0",
+    "simplicial-complex": "~0.3.0"
+  },
+  "devDependencies": {
+    "tap": "~0.4.0"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikolalysenko/differential.git"
+  },
+  "keywords": [
+    "homology",
+    "cohomology",
+    "chain",
+    "cycle",
+    "cocycle",
+    "cochain",
+    "boundary",
+    "coboundary",
+    "differential",
+    "codifferential",
+    "algebra",
+    "geometry",
+    "linear"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "d84ec5979bfeb333759fcda83972817a612ad882"
+}

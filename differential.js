@@ -2,7 +2,7 @@
 
 var top = require("simplicial-complex")
 var boundaryCells = require("boundary-cells")
-var coorientation = require("cooriented")
+var cooriented = require("cooriented")
 var CSRMatrix = require("csr-matrix")
 
 function differential(cells, boundary_cells) {
@@ -15,7 +15,7 @@ function differential(cells, boundary_cells) {
       bc.splice(j, 1)
       var idx = top.findCell(boundary_cells, bc)
       var b = boundary_cells[idx]
-      items.push([idx, i, coorientation(c, b)])
+      items.push([idx, i, cooriented(bc, b) * (j & 1 ? -1 : 1)])
     }
   }
   var result = CSRMatrix.fromList(items, boundary_cells.length, cells.length)

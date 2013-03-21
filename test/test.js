@@ -2,10 +2,9 @@ var differential = require("../differential.js")
 
 require("tap").test("diff", function(t) {
 
-  console.log(differential([
-    [0,1,2],
-    [1,2,3]
-  ]).toDense())
+  var D = differential([[0,1,2],[1,2,3]])
+  console.log(D.toDense())
+  console.log(D.boundaryCells)
 
   t.end()
 })

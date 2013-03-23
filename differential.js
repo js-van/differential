@@ -1,13 +1,12 @@
 "use strict"
 
 var top = require("simplicial-complex")
-var boundaryCells = require("boundary-cells")
 var cooriented = require("cooriented")
 var CSRMatrix = require("csr-matrix")
 
 function differential(cells, boundary_cells) {
-  boundary_cells = boundary_cells || boundaryCells(cells)
   var items = []
+  boundary_cells = boundary_cells || top.unique(top.boundary(cells))
   for(var i=0, ilen=cells.length; i<ilen; ++i) {
     var c = cells[i]
     for(var j=0, jlen=c.length; j<jlen; ++j) {

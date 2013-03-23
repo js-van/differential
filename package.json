@@ -7,10 +7,9 @@
     "test": "test"
   },
   "dependencies": {
-    "boundary-cells": "~0.0.0",
     "cooriented": "~0.1.0",
     "csr-matrix": "~0.1.0",
-    "simplicial-complex": "~0.3.0"
+    "simplicial-complex": "~0.3.1"
   },
   "devDependencies": {
     "tap": "~0.4.0"
